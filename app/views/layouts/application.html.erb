@@ -4,6 +4,11 @@
     <title><%= full_title(yield(:title)) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+
+      </script>
+    <![endif] -->
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
@@ -11,6 +16,10 @@
   </head>
 
   <body>
+   <%= render 'layouts/header' %>
+   <div class="container">
     <%= yield %>
+    <%= render 'layouts/footer' %>
+   </div>
   </body>
 </html>

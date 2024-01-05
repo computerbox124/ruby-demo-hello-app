@@ -1,4 +1,16 @@
-<% provide(:title, "Home") %>
+<div class="center jumbotron">
 
-Join <a href="codeany.org">CodeAny</a>!
+  <% provide(:title, "Home") %>
+
+  <h1>Welcome to CodeAny</h1>
+
+  Join <a href="codeany.org">CodeAny</a>! <br>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("codeAnyLogo.svg", alt: 'Logo'),
+            'codeany.org'  %>
+
+
 
