@@ -1,8 +1,5 @@
 class ApplicationController < ActionController::Base
-  def hello
-    render html:"Hello World !"
-  end
-  def goodbye
-    render html:"goodbye, world!"
-  end
+  # Prevent CSRF attacks by raising an exception
+  protect_from_forgery with: :exception
+  include SessionsHelper
 end
