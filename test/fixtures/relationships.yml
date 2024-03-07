@@ -1,0 +1,15 @@
+one:
+  follower: michael
+  followed: emil
+
+two:
+  follower: michael
+  followed: other
+
+three:
+  follower: emil
+  followed: michael
+
+four:
+  follower: huseyn
+  followed: michael
